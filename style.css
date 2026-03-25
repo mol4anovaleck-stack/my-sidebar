@@ -1,0 +1,152 @@
+/* ОСНОВНОЙ КОНТЕЙНЕР САЙДБАРА */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ВЕРХНЯЯ ЧАСТЬ САЙДБАРА */
+.sidebar__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ЛЕВАЯ ЧАСТЬ ВЕРХНЕЙ СЕКЦИИ */
+.sidebar__top-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ЛОГОТИП */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* КНОПКИ-ИКОНКИ */
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #ff3e79;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.icon-btn:hover {
+  opacity: 0.8;
+  filter: brightness(1.1);
+}
+
+.icon-btn img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+.menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  transition: 0.3s ease;
+  position: relative;
+  display: inline-block;
+  padding-left: 0;
+  line-height: 24px;
+}
+
+/* ПЕРВЫЙ ПУНКТ МЕНЮ (АКТИВНЫЙ) */
+.menu a:first-child {
+  color: #7e7e7e;
+}
+
+.menu a:first-child::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  border-radius: 0 2px 2px 0;
+}
+
+.menu a:hover {
+  color: #ff3e79;
+  opacity: 0.7;
+}
+
+/* НИЖНЯЯ ЧАСТЬ САЙДБАРА */
+.sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ИКОНКИ В НИЖНЕЙ ЧАСТИ */
+.sidebar__bottom-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* КОНТАКТЫ */
+.contacts {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ТЕЛЕФОН */
+.phone {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ПЕРЕКЛЮЧАТЕЛЬ ЯЗЫКОВ */
+.lang {
+  margin-top: 10px;
+}
+
+.lang span {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.lang span:first-child {
+  color: #9e9e9e;
+}
+
+.lang span:hover {
+  opacity: 0.6;
+}
