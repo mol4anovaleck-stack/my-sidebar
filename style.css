@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes/TTLakes-Regular.woff2') format('woff2'),
+       url('fonts/TTLakes/TTLakes-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('fonts/TTLakes/TTLakes-Bold.woff2') format('woff2'),
+       url('fonts/TTLakes/TTLakes-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'TT Lakes', sans-serif;
+  background-color: rgba(248, 248, 248, 1);
+  color: #000000;
+}
+
 /* ОСНОВНОЙ КОНТЕЙНЕР САЙДБАРА */
 .sidebar {
   position: fixed;
@@ -58,8 +81,6 @@
 
 .icon-btn img {
   display: block;
-  width: 18px;
-  height: 18px;
   object-fit: contain;
 }
 
